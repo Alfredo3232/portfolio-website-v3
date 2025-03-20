@@ -1,12 +1,21 @@
 import { createApp } from "vue";
 import * as bootstrap from "bootstrap";
+import router from "./router.js";
 
+// App & CSS
 import App from "./App.vue";
-
-// Import our custom CSS
 import "./scss/styles.scss";
 import "./style.css";
 
+// Components
+import NavBar from "./components/NavBar.vue";
 
+const app = createApp(App);
 
-createApp(App).mount("#app");
+// Global Components
+app.component("nav-bar", NavBar);
+
+// Plugins
+app.use(router);
+
+app.mount("#app");
