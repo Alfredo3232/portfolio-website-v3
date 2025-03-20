@@ -21,7 +21,7 @@ jobs:
       - name: Install ESLint
         run: |
           npm i eslint@9.22.0
-          npm i eslint-plugin-vue@9.22.0
+          npm i eslint-plugin-vue@10.0.0
           npm i @microsoft/eslint-formatter-sarif@3.1.0
 
       - name: Run ESLint
