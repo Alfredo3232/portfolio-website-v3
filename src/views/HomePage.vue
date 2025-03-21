@@ -1,9 +1,13 @@
 <template>
+  <nav-bar class="fixed-top" />
+
   <main>
     <div
-      class="shadow container transparent-1 position-absolute top-50 start-50 translate-middle p-4 rounded"
+      class="shadow container tp-1 position-absolute top-50 start-50 translate-middle p-4 rounded"
     >
-      <p class="fs-2 text-light text-center fst-italic glow">Welcome to my Page</p>
+      <p class="fs-2 text-light text-center fst-italic glow">
+        Welcome to my Portfolio
+      </p>
       <p class="fw-light text-light text-center text-secondary">
         Feel free to explore
       </p>
@@ -49,16 +53,7 @@ export default {
 </script>
 
 <style scoped>
-main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../assets/wallpaper3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.transparent-1 {
+.tp-1 {
   background-color: rgba(0, 0, 0, 0.67);
 }
 
@@ -69,10 +64,6 @@ main {
 .active:hover {
   color: aquamarine !important;
   font-size: calc(1rem + 6px);
-}
-
-.text-shadow {
-  text-shadow: 10px;
 }
 
 .glow {
@@ -86,8 +77,8 @@ main {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #008d95,
-      0 0 20px #008d95, 0 0 30px #008d95, 0 0 40px #008d95, 0 0 50px #008d95;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #008d95, 0 0 20px #008d95,
+      0 0 30px #008d95, 0 0 40px #008d95, 0 0 50px #008d95;
   }
 
   to {
