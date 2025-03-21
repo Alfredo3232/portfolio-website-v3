@@ -28,3 +28,10 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+nav {
+  background-color: rgba(0, 0, 0, 0.67) !important;
+  z-index: 1;
+}
+</style>
