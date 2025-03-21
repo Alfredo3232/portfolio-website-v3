@@ -1,8 +1,15 @@
 <template>
+  <nav-bar class="fixed-top" />
+
   <main>
-    <div class="container transparent-1 position-absolute top-50 start-50 translate-middle p-4 rounded">
-      <p class="fs-2 text-light text-center fst-italic">
-        Welcome to my Page
+    <div
+      class="shadow container tp-1 position-absolute top-50 start-50 translate-middle p-4 rounded"
+    >
+      <p class="fs-2 text-light text-center fst-italic glow">
+        Welcome to my Portfolio
+      </p>
+      <p class="fw-light text-light text-center text-secondary">
+        Feel free to explore
       </p>
       <p class="text-center text-secondary">Feel free to explore</p>
 
@@ -25,33 +32,54 @@
 </template>
 
 <script>
-  import {
-    BIconBriefcaseFill, BIconHouseGearFill, BIconEnvelopeFill
-  } from "bootstrap-icons-vue";
+import {
+  BIconBriefcaseFill,
+  BIconHouseGearFill,
+  BIconEnvelopeFill
+} from "bootstrap-icons-vue";
 
-  export default {
-    components: {
-      BIconBriefcaseFill,
-      BIconHouseGearFill,
-      BIconEnvelopeFill
-    },
-    data() {
-      return {
-        liClass:
-          "list-group-item list-group-item-dark list-group-item-action tp-li text-light active"
-      };
-    }
-  };
+export default {
+  components: {
+    BIconBriefcaseFill,
+    BIconHouseGearFill,
+    BIconEnvelopeFill
+  },
+  data() {
+    return {
+      liClass:
+        "list-group-item list-group-item-dark list-group-item-action tp-li text-light active"
+    };
+  }
+};
 </script>
 
 <style scoped>
-  main {
-    width: 100vw;
-    height: 92vh;
-    background-image: url("../assets/wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.tp-1 {
+  background-color: rgba(0, 0, 0, 0.67);
+}
+
+.tp-li {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.active:hover {
+  color: aquamarine !important;
+  font-size: calc(1rem + 6px);
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #008d95, 0 0 20px #008d95,
+      0 0 30px #008d95, 0 0 40px #008d95, 0 0 50px #008d95;
   }
 
   .transparent-1 {
