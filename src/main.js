@@ -5,7 +5,6 @@ import router from "./router.js";
 // App & CSS
 import App from "./App.vue";
 import "./scss/styles.scss";
-import "./style.css";
 
 // Components
 import NavBar from "./components/NavBar.vue";

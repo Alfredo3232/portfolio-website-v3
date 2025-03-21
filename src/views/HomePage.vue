@@ -11,7 +11,6 @@
       <p class="fw-light text-light text-center text-secondary">
         Feel free to explore
       </p>
-      <p class="text-center text-secondary">Feel free to explore</p>
 
       <div class="text-center pt-5">
         <ul class="list-group list-group-flush rounded mx-5 px-5 mb-3">
@@ -82,17 +81,9 @@ export default {
       0 0 30px #008d95, 0 0 40px #008d95, 0 0 50px #008d95;
   }
 
-  .transparent-1 {
-    background-color: rgba(0, 0, 0, 0.67);
-    z-index: 1;
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #6dffe2, 0 0 20px #6dffe2,
+      0 0 40px #6dffe2, 0 0 50px #6dffe2, 0 0 60px #6dffe2, 0 0 70px #6dffe2;
   }
-
-  .tp-li {
-    background-color: rgba(0, 0, 0, 0) !important;
-  }
-
-  .active:hover {
-    color: aquamarine !important;
-    font-size: calc(1rem + 6px);
-  }
+}
 </style>
