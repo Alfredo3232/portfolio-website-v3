@@ -1,65 +1,37 @@
 <template>
-  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Alfredo's Page</a>
-      <button
-        class="navbar-toggler"
-        style="color: white"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar"
-        aria-label="Toggle navigation"
-      >
-        <BIconList />
-      </button>
-
-      <div
-        class="offcanvas offcanvas-end text-bg-dark"
-        tabindex="-1"
-        id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Pages</h5>
-          <button
-            type="button"
-            class="btn-close btn-close-white"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/projects">Projects</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/resume">Resume</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/contacts">Contacts</router-link>
-            </li>
-          </ul>
+  <nav
+    class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top"
+    data-bs-theme="dark"
+  >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Alfredo's Page</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav-underline">
+            <router-link class="nav-link" to="/">Home</router-link>
+            <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
+            <router-link class="nav-link" to="/projects">Projects</router-link>
+            <router-link class="nav-link" to="/resume">Resume</router-link>
+            <router-link class="nav-link" to="/contacts">Contacts</router-link>
+          </div>
         </div>
       </div>
-    </div>
   </nav>
 </template>
 
-<script>
-import { BIconList } from "bootstrap-icons-vue";
-
-export default {
-  components: {
-    BIconList
-  }
-};
-</script>
+<style scoped>
+nav {
+  background-color: rgba(0, 0, 0, 0.67) !important;
+  z-index: 1;
+}
+</style>
