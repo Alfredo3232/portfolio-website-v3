@@ -1,8 +1,5 @@
 <template>
-  <nav
-    class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
-    data-bs-theme="dark"
-  >
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Alfredo's Portfolio</a>
       <button

@@ -2,9 +2,7 @@
   <nav-bar class="fixed-top" />
 
   <main>
-    <div
-      class="shadow container tp-1 position-absolute top-50 start-50 translate-middle p-4 rounded"
-    >
+    <div class="shadow container tp-1 position-absolute top-50 start-50 translate-middle p-4 rounded">
       <p class="fs-2 text-light text-center fst-italic glow">
         Welcome to my Portfolio
       </p>

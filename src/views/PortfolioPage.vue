@@ -1,11 +1,9 @@
 <template>
-  <nav-bar style="background-color: black !important;"/>
+  <nav-bar style="background-color: black !important;" />
 
   <main>
-    <div
-      class="shadow container tp-sm position-absolute top-50 start-50 translate-middle p-4 mt-5 text-light"
-      style="margin-top: 58px !important;"
-    >
+    <div class="shadow container tp-sm position-absolute top-50 start-50 translate-middle p-4 mt-5 text-light"
+      style="margin-top: 58px !important;">
       <h1>Portfolio Page</h1>
     </div>
   </main>
